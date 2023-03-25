@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="assets/FaceIcon.png" />
 
     <!-- Todo: put here your site title -->
     <title>Ștefan | Web Developer</title>
@@ -36,12 +36,13 @@
       <div class="container">
         <h1 class="hero-title load-hidden">
           <!-- Add a hover over effect for Ștefan that shows a label saying: (pronounced Shtaefan, accent on 'a') -->
-          Hi, my name is <span class="text-color-main">Ștefan</span> <span class="small"> (pronounced<span class="text-color-main small"> Shteafaan</span>)</span>
+          Hi, my name is <span class="text-color-main" title="pronounced Shteh-fahn">Ștefan</span>
+          
           <br />
           I'm the Web Dev & Designer you may need.
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#contact"
             >Hire me</a
           >
         </p>
@@ -59,21 +60,29 @@
               <img
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
+                id="rotated"
                 height="auto"
                 width="300px"
                 src="assets/profile.jpg"
                 alt="Profile Image"
               />
+              <!-- Temporary tweak: id = "rotated". Needs to be FIXED-->
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                Front-End and Full-Stack websites and apps. UX/UI included.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Always curious about learning new technologies and tools.
+              </p>
+              <p class="about-wrapper__info-text">
+                Avid problem solver focused on personal branding.
+              </p>
+              <p class="about-wrapper__info-text">
+                Also Journalist, Content Creator, Language Teacher and with a
+                lifetime passion for Basketball
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -96,26 +105,33 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text">Website Development</h2>
 
           <!-- Notice: each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Romanian Developer Portfolio</h3>
+                <h3 class="project-wrapper__text-title">
+                  Romanian Developer Portfolio
+                </h3>
                 <div>
                   <p class="mb-4">
                     <!-- The colour needs to be changed -->
-                    A <span class="text-color-main">Romanian Design</span> for my first ever portfolio. Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    The template I used for my first ever portfolio,
+                    including a personal <span class="text-color-main">Romanian Design</span>.
+                    I learned a lot about colours and colour theory, 
+                    user page navigation, and navigation bars. One of the
+                    most difficult things to make functional was making 
+                    visitors click on the Donate button. I successfully 
+                    improved the click rate by adding the Donate button 
+                    to the navbar.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="https://github.com/stefanpaiu/my_website"
+                  href="https://stefanpaiu.github.io/romanian_portfolio/"
                 >
                   See Live
                 </a>
@@ -123,7 +139,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/stefanpaiu/romanian_portfolio/"
                 >
                   Source Code
                 </a>
@@ -131,7 +147,11 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a
+                  rel="noreferrer"
+                  href="https://stefanpaiu.github.io/romanian_portfolio/"
+                  target="_blank"
+                >
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -142,7 +162,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/project_3.jpg"
                     />
                   </div>
                 </a>
@@ -158,16 +178,20 @@
                 <h3 class="project-wrapper__text-title">React Search</h3>
                 <div>
                   <p class="mb-4">
-                    <span class="text-color-main">Robofriends</span> is a React project that uses the robohash.org API. A Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    <span class="text-color-main">Robofriends</span> is a React
+                    project that uses the robohash.org API. It was one my 
+                    first ever React projects, and definitely the first one 
+                    that I successfully completed. After learning the fundamentals
+                    of React and working with lists, constructors, components, classes,
+                    fetch and search features, I put them all together in this 
+                    basic, yet fun project.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://stefanpaiu.github.io/robofriends/"
                 >
                   See Live
                 </a>
@@ -175,7 +199,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/stefanpaiu/robofriends/tree/master"
                 >
                   Source Code
                 </a>
@@ -183,7 +207,11 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a
+                  rel="noreferrer"
+                  href="https://stefanpaiu.github.io/robofriends/"
+                  target="_blank"
+                >
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -194,7 +222,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/project_2.jpg"
                     />
                   </div>
                 </a>
@@ -207,18 +235,28 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Static Portfolio</h3>
+                <h3 class="project-wrapper__text-title">
+                  Journalist Portfolio
+                </h3>
                 <div>
                   <p class="mb-4">
-                    <span class="text-color-main">2021</span> | My previous portfolio design where I played significantly with many design tools out there. If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    Being a journalist, I decided to use my React knowledge in
+                    a different challenge, one that illustrates the other half of my work.
+                    This <span class="text-color-main">Journalist Portfolio</span> 
+                    is a work in progress, that at the beginning I juggled with the
+                    full range of design tools, from Figma to the Adobe Suite. I
+                    had undertaken a full design process, starting with
+                    requirements, sketching and user flows and ending up with
+                    the React website. It will ultimately be a Full-Stack React Native project, 
+                    using the Youtube API for my channel and documentaries and a MongoDB database 
+                    for my published articles.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://stefanpaiu.github.io/journalist_portfolio/"
                 >
                   See Live
                 </a>
@@ -226,7 +264,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/stefanpaiu/journalist_portfolio"
                 >
                   Source Code
                 </a>
@@ -234,7 +272,11 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a
+                  rel="noreferrer"
+                  href="https://stefanpaiu.github.io/journalist_portfolio/"
+                  target="_blank"
+                >
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -245,7 +287,73 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/project_2.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <hr />
+
+          <h2 class="section-title dark-blue-text">Website Design</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">
+                  Educational Website Redesign
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    A freelance project for a complete educational <span class="text-color-main">Website Redesign</span>.
+                    I received full ownership on this task after we discussed the requirements in a couple of clients meetings.
+                    The requirements were to revamp completely the old website, without 
+                    losing its identity or files. The latter was the most challenging task
+                    since they had a decade worth of material uploaded randomly on the platform.
+                    By getting other people involved, I managed to develop great delegation skills.
+                    <!-- If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
+                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism. -->
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://www.figma.com/file/C5zxUMefdMzhNJlzMzRDP9/ICCS-Landing-Page?t=znvoqONenhKi0iDT-6"
+                >
+                  Landing Page
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://www.figma.com/file/lAd97zon4UYxr7EPbz8mDC/ICCS-Redesign?t=znvoqONenhKi0iDT-6"
+                >
+                  Prototyping
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://www.figma.com/file/C5zxUMefdMzhNJlzMzRDP9/ICCS-Landing-Page?t=znvoqONenhKi0iDT-6"
+                  target="_blank"
+                >
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project_5.png"
                     />
                   </div>
                 </a>
@@ -254,15 +362,53 @@
           </div>
           <!-- /END Project -->
 
-
-
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">BT Redesign</h3>
+                <div>
+                  <p class="mb-4">
+                    During my time in BT I was part of the team 
+                    who focused on <span class="text-color-main">redesigning the internal websites</span> as part of the
+                    2019 Brand Change. Working in a team with experts in the field,
+                    I learned about brand identity, I became proficient in Java Spring
+                    for the development and even learned Angular in the process.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://www.bt.com/"
+                >
+                  BT's Website
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://www.bt.com/" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project_4.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
           <!-- ADD MORE PROJECTS -->
-        
-        
-        
-        
-        
         </div>
       </div>
     </section>
@@ -273,7 +419,9 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">For collaborations or simply saying 👋</p>
+          <p class="contact-wrapper__text">
+            For collaborations or simply saying 👋
+          </p>
           <a
             rel="noreferrer"
             target="_blank"
@@ -296,10 +444,18 @@
           <!-- <a rel="noreferrer" href="#!" target="_blank">
             <i class="fa fa-twitter fa-inverse"></i>
           </a> -->
-          <a rel="noreferrer" href="https://www.linkedin.com/in/stefan-paiu/" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/stefan-paiu/"
+            target="_blank"
+          >
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="https://github.com/stefanpaiu" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/stefanpaiu"
+            target="_blank"
+          >
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -307,12 +463,14 @@
         <hr />
 
         <p class="footer__text">
-          © 2023 - Portfolio website of 
-          <a rel="noreferrer" href="https://github.com/stefanpaiu" target="_blank"
+          © 2023 - Portfolio website of
+          <a
+            rel="noreferrer"
+            href="https://github.com/stefanpaiu"
+            target="_blank"
             >Ștefan Paiu</a
           >
         </p>
-
       </div>
     </footer>
     <!-- /END Footer Section -->
