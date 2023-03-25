@@ -22,6 +22,10 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+span:hover {
+  opacity: 85%;
+}
+
 .section-title {
   margin: 0px;
   margin-bottom: 4.5rem;
@@ -39,12 +43,13 @@ a:hover {
 }
 
 .text-color-main {
+  
   @include supportColorForIE11();
 
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: $highlighted-text;
   }
 
   &:hover {
@@ -52,6 +57,6 @@ a:hover {
   }
 }
 
-.small{
+.small {
   font-size: $default-font-size !important ;
 }
