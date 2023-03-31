@@ -18,6 +18,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
@@ -36,14 +41,18 @@
       <div class="container">
         <h1 class="hero-title load-hidden">
           <!-- Add a hover over effect for Ștefan that shows a label saying: (pronounced Shtaefan, accent on 'a') -->
-          Hi, my name is <span class="text-color-main" title="pronounced Shteh-fahn">Ștefan</span>
-          
+          Hi, my name is
+          <span class="text-color-main" title="pronounced Shteh-fahn"
+            >Ștefan</span
+          >
+          and
+
           <br />
           I'm the Web Dev & Designer you may need.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#contact"
-            >Hire me</a
+            >Let's chat!</a
           >
         </p>
       </div>
@@ -72,7 +81,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                Front-End and Full-Stack websites and apps. UX/UI included.
+                Front-End and Full-Stack Developer. UX/UI included.
               </p>
               <p class="about-wrapper__info-text">
                 Always curious about learning new technologies and tools.
@@ -112,19 +121,100 @@
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">
+                  Journalist Portfolio
+                </h3>
+                <div>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle-fill"></i> Being a
+                    journalist, I decided to use my React knowledge in a
+                    different challenge, one that illustrates the other half of
+                    my work.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle"></i> This
+                    <span class="text-color-main">Journalist Portfolio</span>
+                    is a work in progress, that at the beginning I juggled with
+                    the full range of design tools, from Figma to the Adobe
+                    Suite.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle-fill"></i> I used a full
+                    design process, starting with requirements, sketching and
+                    user flows and ending up with the React website.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle"></i> It will ultimately
+                    be a Full-Stack React Native project, using the Youtube API
+                    for my channel and documentaries and a MongoDB database for
+                    my published articles.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://stefanpaiu.github.io/journalist_portfolio/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/stefanpaiu/journalist_portfolio"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://stefanpaiu.github.io/journalist_portfolio/"
+                  target="_blank"
+                >
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project_2.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">
                   Romanian Developer Portfolio
                 </h3>
                 <div>
                   <p class="mb-4">
-                    <!-- The colour needs to be changed -->
-                    The template I used for my first ever portfolio,
-                    including a personal <span class="text-color-main">Romanian Design</span>.
-                    I learned a lot about colours and colour theory, 
-                    user page navigation, and navigation bars. One of the
-                    most difficult things to make functional was making 
-                    visitors click on the Donate button. I successfully 
-                    improved the click rate by adding the Donate button 
-                    to the navbar.
+                    <i class="bi bi-arrow-right-circle-fill"></i> The template I
+                    used for my first ever portfolio, including a personal
+                    <span class="text-color-main">Romanian Design</span>.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle"></i> I learned a lot
+                    about colours and colour theory, user page navigation, and
+                    navigation bars.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle-fill"></i> One of the
+                    most difficult things to make functional was making visitors
+                    click on the Donate button. I successfully improved the
+                    click rate by adding the Donate button to the navbar.
                   </p>
                 </div>
                 <a
@@ -178,13 +268,20 @@
                 <h3 class="project-wrapper__text-title">React Search</h3>
                 <div>
                   <p class="mb-4">
-                    <span class="text-color-main">Robofriends</span> is a React
-                    project that uses the robohash.org API. It was one my 
-                    first ever React projects, and definitely the first one 
-                    that I successfully completed. After learning the fundamentals
-                    of React and working with lists, constructors, components, classes,
-                    fetch and search features, I put them all together in this 
-                    basic, yet fun project.
+                    <i class="bi bi-arrow-right-circle"></i
+                    ><span class="text-color-main"> Robofriends</span> is a
+                    React project that uses the robohash.org API.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle-fill"></i> It was one my
+                    first ever React projects, and definitely the first one that
+                    I successfully completed.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle"></i> After learning the
+                    fundamentals of React and working with lists, constructors,
+                    components, classes, fetch and search features, I put them
+                    all together in this basic, yet fun project.
                   </p>
                 </div>
                 <a
@@ -231,70 +328,6 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Journalist Portfolio
-                </h3>
-                <div>
-                  <p class="mb-4">
-                    Being a journalist, I decided to use my React knowledge in
-                    a different challenge, one that illustrates the other half of my work.
-                    This <span class="text-color-main">Journalist Portfolio</span> 
-                    is a work in progress, that at the beginning I juggled with the
-                    full range of design tools, from Figma to the Adobe Suite. I
-                    had undertaken a full design process, starting with
-                    requirements, sketching and user flows and ending up with
-                    the React website. It will ultimately be a Full-Stack React Native project, 
-                    using the Youtube API for my channel and documentaries and a MongoDB database 
-                    for my published articles.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://stefanpaiu.github.io/journalist_portfolio/"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/stefanpaiu/journalist_portfolio"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a
-                  rel="noreferrer"
-                  href="https://stefanpaiu.github.io/journalist_portfolio/"
-                  target="_blank"
-                >
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project_2.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
           <hr />
 
           <h2 class="section-title dark-blue-text">Website Design</h2>
@@ -308,15 +341,30 @@
                 </h3>
                 <div>
                   <p class="mb-4">
-                    A freelance project for a complete educational <span class="text-color-main">Website Redesign</span>.
-                    I received full ownership on this task after we discussed the requirements in a couple of clients meetings.
-                    The requirements were to revamp completely the old website, without 
-                    losing its identity or files. The latter was the most challenging task
-                    since they had a decade worth of material uploaded randomly on the platform.
-                    By getting other people involved, I managed to develop great delegation skills.
-                    <!-- If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism. -->
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    A freelance project for a complete educational
+                    <span class="text-color-main">Website Redesign</span>.
                   </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle"></i> I received full
+                    ownership on this task after we discussed the requirements
+                    in a couple of clients meetings.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle-fill"></i>The
+                    requirements were to revamp completely the old website,
+                    without losing its identity or files. The latter was the
+                    most challenging task since they had a decade worth of
+                    material uploaded randomly on the platform.
+                  </p>
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle"></i> By getting other
+                    people involved, I managed to develop great delegation
+                    skills.
+                  </p>
+
+                  <!-- If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
+                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism. -->
                 </div>
                 <a
                   rel="noreferrer"
@@ -369,11 +417,17 @@
                 <h3 class="project-wrapper__text-title">BT Redesign</h3>
                 <div>
                   <p class="mb-4">
-                    During my time in BT I was part of the team 
-                    who focused on <span class="text-color-main">redesigning the internal websites</span> as part of the
-                    2019 Brand Change. Working in a team with experts in the field,
-                    I learned about brand identity, I became proficient in Java Spring
-                    for the development and even learned Angular in the process.
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                    During my time in BT I was part of the team who focused on
+                    <span class="text-color-main">redesigning the internal websites</span>
+                    as part of the 2019 Brand Change.
+                  </p>
+
+                  <p class="mb-4">
+                    <i class="bi bi-arrow-right-circle"></i> Working in a team
+                    with experts in the field, I learned about brand identity, I
+                    became proficient in Java Spring for the development and
+                    even learned the Angular basics in the process.
                   </p>
                 </div>
                 <a
@@ -476,5 +530,10 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
